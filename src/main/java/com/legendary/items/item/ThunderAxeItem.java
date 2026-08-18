@@ -33,3 +33,16 @@ public class ThunderAxeItem extends AxeItem {
 			world.spawnEntity(axeEntity);
 
 			world.playSound(null, user.getBlockPos(), SoundEvents.ITEM_TRIDENT_THROW, SoundCategory
+							.PLAYERS, 1.0f, 0.9f);
+
+			if (!user.getAbilities().creativeMode) {
+				stack.decrement(1);
+			}
+		}
+
+		user.getItemCooldownManager().set(this, THROW_COOLDOWN_TICKS);
+		user.incrementStat(net.minecraft.stat.Stats.USED.getOrCreateStat(this));
+
+		return TypedActionResult.success(stack, world.isClient());
+	}
+}
