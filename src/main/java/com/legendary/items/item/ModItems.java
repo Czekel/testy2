@@ -30,4 +30,4 @@ public class ModItems {
 			entries.add(THUNDER_AXE);
 		});
 	}
-}
+	
