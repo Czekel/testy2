@@ -1,0 +1,19 @@
+{
+  "name": "Fabric Mod Dev (Java 21)",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installGradle": true
+    }
+  },
+  "postCreateCommand": "gradle wrapper --gradle-version 8.11 || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java"
+      ]
+    }
+  }
+}
