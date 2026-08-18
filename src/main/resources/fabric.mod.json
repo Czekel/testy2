@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "legendaryitems",
+  "version": "${version}",
+  "name": "Legendary Items",
+  "description": "Dodaje Excalibura i Boski Topór - dwa legendarne bronie z unikalnymi umiejętnościami.",
+  "authors": [
+    "Ty"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.legendary.items.LegendaryItems"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
