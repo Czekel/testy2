@@ -48,4 +48,3 @@ public class ExcaliburSwordItem extends SwordItem {
 
 		return ActionResult.SUCCESS;
 	}
-}
