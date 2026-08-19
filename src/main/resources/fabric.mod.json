@@ -10,7 +10,7 @@
   "contact": {},
   "license": "CC0-1.0",
   "environment": "*",
-"entrypoints": {
+  "entrypoints": {
     "main": [
       "com.legendary.items.LegendaryItems"
     ],
@@ -18,7 +18,9 @@
       "com.legendary.items.LegendaryItemsClient"
     ]
   },
-  "mixins": [],
+  "mixins": [
+    "legendaryitems.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.18.1",
     "minecraft": "~1.21.11",
