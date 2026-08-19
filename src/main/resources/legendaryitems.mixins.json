@@ -4,7 +4,8 @@
   "package": "com.legendary.items.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin"
   ],
   "client": [],
   "injectors": {
