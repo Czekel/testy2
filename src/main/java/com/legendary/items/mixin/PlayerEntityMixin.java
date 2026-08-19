@@ -1,5 +1,6 @@
 package com.legendary.items.mixin;
 
+import com.legendary.items.PardonedPlayers;
 import com.legendary.items.item.ModItems;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,7 @@ public abstract class PlayerEntityMixin {
             ItemStack stack = player.getStackInHand(hand);
             if (stack.getItem() == ModItems.TOTEM_OF_PARDON) {
                 stack.decrement(1);
+                PardonedPlayers.markPardoned(player.getUuid());
                 ci.cancel();
                 return;
             }
