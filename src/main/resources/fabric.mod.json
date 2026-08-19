@@ -10,9 +10,12 @@
   "contact": {},
   "license": "CC0-1.0",
   "environment": "*",
-  "entrypoints": {
+"entrypoints": {
     "main": [
       "com.legendary.items.LegendaryItems"
+    ],
+    "client": [
+      "com.legendary.items.LegendaryItemsClient"
     ]
   },
   "mixins": [],
